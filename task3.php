@@ -61,8 +61,7 @@ function item_view($id, &$fast_tree)
     if ($id == '1') {
         return '1';
     }
-    $result = item_view($fast_tree[$id], $fast_tree) . '.' . $id;
-    return $result;
+    return item_view($fast_tree[$id], $fast_tree) . '.' . $id;
 }
 
 $tree_view = [];
